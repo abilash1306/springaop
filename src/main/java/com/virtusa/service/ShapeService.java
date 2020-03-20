@@ -1,5 +1,6 @@
 package com.virtusa.service;
 
+import com.virtusa.custom.aop.Loggable;
 import com.virtusa.model.Circle;
 import com.virtusa.model.Triangle;
 
@@ -9,6 +10,7 @@ public class ShapeService {
 	
 	private Circle circle;
 
+	@Loggable
 	public Triangle getTriangle() {
 		return triangle;
 	}

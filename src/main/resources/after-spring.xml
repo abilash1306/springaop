@@ -7,19 +7,16 @@
     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
     http://www.springframework.org/schema/aop
     http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
-
-   <aop:aspectj-autoproxy />
-
-   <bean name = "triangle" class = 'com.virtusa.model.Triangle'>
-     <property name = "name" value = "Triangle" />
-   </bean>
-   
-   <bean name = "circle" class = 'com.virtusa.model.Circle'>
-     <property name = "name" value = "Circle" />
-   </bean>
-   
-   <bean name = "shapeService" class = "com.virtusa.service.ShapeService" autowire = "byName" />
-   
-   <bean name = "loggingAspect" class = "com.virtusa.aop.LoggingAspect" />
-
+    
+    <aop:aspectj-autoproxy/>
+     
+     <bean name = "circle" class = "com.virtusa.model.Circle">
+        
+     </bean>
+     
+     <bean name= "shapeService" class = "com.virtusa.service.ShapeService" autowire = "byName">
+       
+     </bean>
+     
+     <bean name = "loggingAspect" class = "com.virtusa.aop.AfterLoggingAspect" />
 </beans>
